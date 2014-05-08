@@ -3,4 +3,6 @@ node_modules/*
 .jade_cache/*
 .jm.jade
 .jm.html
+.jm.js
+node
 npm-debug.log
