@@ -1,0 +1,6 @@
+node_modules/*
+.jade_cache
+.jade_cache/*
+.jm.jade
+.jm.html
+npm-debug.log

@@ -1,0 +1,7 @@
+include ./../.jm.jade
+
++jmInclude("insane", 1, 2, "a")
+	+jmInclude("translator", 1, 2, "a")
+		+jmCall("alph", "a", "b", "c")
+			+jmCall("alph", "a", "b", "c")
+				hello

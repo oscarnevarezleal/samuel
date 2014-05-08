@@ -1,0 +1,19 @@
+//- JadeModules
+
+//- Mixin Require
+mixin jmInclude(moduleName)
+	- args = Array.prototype.slice.call(arguments)
+	- args.shift()
+	+#{"jm_"+moduleName}(args)
+		if block
+			block
+		else
+			| #{args}
+
+//- Mixin Call
+mixin jmCall(moduleName)
+	- args = Array.prototype.slice.call(arguments)
+	- args.shift()
+	+#{moduleName}(args)
+		if block
+			block
